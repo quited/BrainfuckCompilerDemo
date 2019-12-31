@@ -45,31 +45,57 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		}
 	}
 
+	localPtrCounter := 0
+	localValueCounter := 0
+
+	clearLocalPtrCounter := func() {
+		if localPtrCounter != 0 {
+			addTabs()
+			functionCompute += fmt.Sprintf("ptr_pos+=(%v); \n", localPtrCounter)
+		}
+		localPtrCounter = 0
+	}
+
+	clearLocalValueCounter := func() {
+		if localValueCounter != 0 {
+			addTabs()
+			functionCompute += fmt.Sprintf("memory[ptr_pos] += (%v); \n", localValueCounter)
+		}
+		localValueCounter = 0
+	}
 	for _, ch := range input {
 		switch ch {
 		case '>':
-			addTabs()
-			functionCompute += "ptr_pos++; \n"
+			clearLocalValueCounter()
+			localPtrCounter++
 		case '<':
-			addTabs()
-			functionCompute += "ptr_pos--; \n"
+			clearLocalValueCounter()
+			localPtrCounter--
 		case '+':
-			addTabs()
-			functionCompute += "memory[ptr_pos]++; \n"
+			clearLocalPtrCounter()
+			localValueCounter++
 		case '-':
-			addTabs()
-			functionCompute += "memory[ptr_pos]--; \n"
+			clearLocalPtrCounter()
+			localValueCounter--
 		case ',':
+			clearLocalPtrCounter()
+			clearLocalValueCounter()
 			addTabs()
 			functionCompute += "std::wcin>>memory[ptr_pos]; \n"
 		case '.':
+			clearLocalPtrCounter()
+			clearLocalValueCounter()
 			addTabs()
 			functionCompute += "std::wcout<<memory[ptr_pos]; \n"
 		case '[':
+			clearLocalPtrCounter()
+			clearLocalValueCounter()
 			addTabs()
 			lBuckets++
 			functionCompute += "while(memory[ptr_pos]){ \n"
 		case ']':
+			clearLocalPtrCounter()
+			clearLocalValueCounter()
 			lBuckets--
 			addTabs()
 			functionCompute += "} \n"
