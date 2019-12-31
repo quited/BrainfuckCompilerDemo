@@ -51,7 +51,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 	clearLocalPtrCounter := func() {
 		if localPtrCounter != 0 {
 			addTabs()
-			functionCompute += fmt.Sprintf("ptr_pos+=(%v); \n", localPtrCounter)
+			functionCompute += fmt.Sprintf("ptr_pos += (%v); \n", localPtrCounter)
 		}
 		localPtrCounter = 0
 	}
@@ -81,18 +81,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			clearLocalPtrCounter()
 			clearLocalValueCounter()
 			addTabs()
-			functionCompute += "std::wcin>>memory[ptr_pos]; \n"
+			functionCompute += "std::wcin >> memory[ptr_pos]; \n"
 		case '.':
 			clearLocalPtrCounter()
 			clearLocalValueCounter()
 			addTabs()
-			functionCompute += "std::wcout<<memory[ptr_pos]; \n"
+			functionCompute += "std::wcout << memory[ptr_pos]; \n"
 		case '[':
 			clearLocalPtrCounter()
 			clearLocalValueCounter()
 			addTabs()
 			lBuckets++
-			functionCompute += "while(memory[ptr_pos]){ \n"
+			functionCompute += "while(memory[ptr_pos]) { \n"
 		case ']':
 			clearLocalPtrCounter()
 			clearLocalValueCounter()
