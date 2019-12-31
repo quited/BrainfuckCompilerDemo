@@ -56,7 +56,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		ptr_pos--; 
 		ptr_pos--; 
 		ptr_pos--; 
-		} 
+	} 
 	ptr_pos++; 
 	ptr_pos++; 
 	ptr_pos++; 
@@ -108,7 +108,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
-			} 
+		} 
 		memory[ptr_pos]++; 
 		while(memory[ptr_pos]){ 
 			ptr_pos--; 
@@ -120,7 +120,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
-			} 
+		} 
 		ptr_pos++; 
 		ptr_pos++; 
 		ptr_pos++; 
@@ -131,7 +131,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		ptr_pos++; 
 		ptr_pos++; 
 		memory[ptr_pos]--; 
-		} 
+	} 
 	memory[ptr_pos]++; 
 	while(memory[ptr_pos]){ 
 		ptr_pos++; 
@@ -144,9 +144,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		ptr_pos++; 
 		while(memory[ptr_pos]){ 
 			memory[ptr_pos]--; 
-			} 
-		ptr_pos++; 
 		} 
+		ptr_pos++; 
+	} 
 	ptr_pos--; 
 	ptr_pos--; 
 	ptr_pos--; 
@@ -166,7 +166,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		ptr_pos--; 
 		ptr_pos--; 
 		ptr_pos--; 
-		} 
+	} 
 	ptr_pos++; 
 	ptr_pos++; 
 	ptr_pos++; 
@@ -177,7 +177,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 	ptr_pos++; 
 	while(memory[ptr_pos]){ 
 		memory[ptr_pos]--; 
-		} 
+	} 
 	memory[ptr_pos]++; 
 	ptr_pos--; 
 	ptr_pos--; 
@@ -214,17 +214,17 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
-			} 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
 		} 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+	} 
 	ptr_pos++; 
 	ptr_pos++; 
 	ptr_pos++; 
@@ -288,13 +288,13 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		ptr_pos--; 
 		ptr_pos--; 
 		ptr_pos--; 
-		} 
+	} 
 	ptr_pos++; 
 	ptr_pos++; 
 	ptr_pos++; 
 	while(memory[ptr_pos]){ 
 		memory[ptr_pos]--; 
-		} 
+	} 
 	memory[ptr_pos]++; 
 	while(memory[ptr_pos]){ 
 		ptr_pos++; 
@@ -313,10 +313,10 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			ptr_pos++; 
 			while(memory[ptr_pos]){ 
 				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
 			} 
+			ptr_pos++; 
+			ptr_pos++; 
+		} 
 		ptr_pos--; 
 		ptr_pos--; 
 		ptr_pos--; 
@@ -336,7 +336,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
-			} 
+		} 
 		ptr_pos++; 
 		ptr_pos++; 
 		ptr_pos++; 
@@ -344,60 +344,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		ptr_pos++; 
 		ptr_pos++; 
 		ptr_pos++; 
-		while(memory[ptr_pos]){ 
-			memory[ptr_pos]--; 
-			} 
-		memory[ptr_pos]++; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
 		while(memory[ptr_pos]){ 
 			memory[ptr_pos]--; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			} 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
+		} 
 		memory[ptr_pos]++; 
 		ptr_pos--; 
 		ptr_pos--; 
@@ -405,9 +354,6 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		ptr_pos--; 
 		ptr_pos--; 
 		ptr_pos--; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
 		memory[ptr_pos]++; 
 		memory[ptr_pos]++; 
 		memory[ptr_pos]++; 
@@ -435,17 +381,71 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
 			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+		} 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		memory[ptr_pos]++; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		while(memory[ptr_pos]){ 
+			memory[ptr_pos]--; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+		} 
 		ptr_pos++; 
 		ptr_pos++; 
 		ptr_pos++; 
@@ -479,14 +479,14 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
-			} 
+		} 
 		ptr_pos++; 
 		ptr_pos++; 
 		ptr_pos++; 
 		while(memory[ptr_pos]){ 
 			while(memory[ptr_pos]){ 
 				memory[ptr_pos]--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -516,7 +516,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -540,16 +540,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
 				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -569,7 +569,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -605,7 +605,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -632,16 +632,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					memory[ptr_pos]++; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
 				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -661,7 +661,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -686,7 +686,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -712,7 +712,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -748,44 +748,44 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -805,7 +805,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -816,7 +816,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				memory[ptr_pos]--; 
-				} 
+			} 
 			memory[ptr_pos]++; 
 			while(memory[ptr_pos]){ 
 				ptr_pos++; 
@@ -829,7 +829,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -849,7 +849,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -877,7 +877,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -905,7 +905,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							memory[ptr_pos]++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						while(memory[ptr_pos]){ 
@@ -920,7 +920,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
+						} 
 						memory[ptr_pos]++; 
 						ptr_pos++; 
 						ptr_pos++; 
@@ -931,7 +931,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -950,8 +950,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
 					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -971,7 +971,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -1004,18 +1004,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
 					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
@@ -1038,7 +1038,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos--; 
 				memory[ptr_pos]++; 
 				ptr_pos++; 
@@ -1049,7 +1049,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -1063,7 +1063,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos--; 
 				memory[ptr_pos]--; 
 				ptr_pos++; 
@@ -1096,19 +1096,19 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
 						ptr_pos++; 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -1121,7 +1121,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos--; 
 				memory[ptr_pos]++; 
 				ptr_pos--; 
@@ -1133,7 +1133,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -1154,7 +1154,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -1174,7 +1174,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -1205,7 +1205,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -1239,7 +1239,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -1255,7 +1255,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
+						} 
 						memory[ptr_pos]++; 
 						ptr_pos++; 
 						ptr_pos++; 
@@ -1266,7 +1266,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -1285,8 +1285,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
 					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -1306,7 +1306,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -1340,19 +1340,19 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
 					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
@@ -1376,7 +1376,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				memory[ptr_pos]++; 
@@ -1388,7 +1388,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -1402,7 +1402,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos--; 
 				memory[ptr_pos]--; 
 				ptr_pos++; 
@@ -1435,19 +1435,19 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
 						ptr_pos++; 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -1460,7 +1460,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos--; 
 				memory[ptr_pos]++; 
 				ptr_pos--; 
@@ -1472,7 +1472,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -1562,13 +1562,13 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
 				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -1588,7 +1588,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -1624,7 +1624,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -1654,7 +1654,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -1665,7 +1665,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				memory[ptr_pos]--; 
-				} 
+			} 
 			memory[ptr_pos]++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -1702,7 +1702,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -1725,7 +1725,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -1748,111 +1748,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						} 
 					} 
-				memory[ptr_pos]++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
 					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -1861,7 +1758,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
+						ptr_pos++; 
 						memory[ptr_pos]++; 
+						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -1884,15 +1783,15 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
+						} 
+						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
-							} 
+						} 
 						memory[ptr_pos]++; 
-						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
@@ -1908,15 +1807,116 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+					} 
+				} 
+				memory[ptr_pos]++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
 						ptr_pos++; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
-							} 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+						} 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
-						} 
 					} 
+				} 
 				memory[ptr_pos]++; 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
@@ -1932,25 +1932,25 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
 					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
 				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -1970,7 +1970,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -1990,7 +1990,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -2039,7 +2039,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -2055,10 +2055,10 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos--; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
 				} 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			while(memory[ptr_pos]){ 
@@ -2084,8 +2084,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
 					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
@@ -2103,11 +2103,11 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -2126,21 +2126,21 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+					} 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -2160,13 +2160,13 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -2190,7 +2190,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -2207,16 +2207,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -2236,7 +2236,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -2270,15 +2270,15 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -2298,7 +2298,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -2334,44 +2334,44 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -2391,7 +2391,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -2402,7 +2402,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				while(memory[ptr_pos]){ 
 					ptr_pos++; 
@@ -2415,7 +2415,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -2435,7 +2435,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -2466,7 +2466,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -2497,7 +2497,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
@@ -2510,7 +2510,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
+							} 
 							memory[ptr_pos]++; 
 							ptr_pos++; 
 							ptr_pos++; 
@@ -2521,7 +2521,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -2540,8 +2540,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
 						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -2561,7 +2561,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -2594,18 +2594,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
@@ -2628,7 +2628,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
@@ -2639,7 +2639,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -2653,7 +2653,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]--; 
 					ptr_pos++; 
@@ -2686,18 +2686,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
 							ptr_pos++; 
 							memory[ptr_pos]++; 
 							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					while(memory[ptr_pos]){ 
@@ -2707,7 +2707,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						memory[ptr_pos]++; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos--; 
@@ -2719,7 +2719,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -2749,7 +2749,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -2769,16 +2769,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -2798,7 +2798,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -2819,7 +2819,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -2839,7 +2839,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -2870,7 +2870,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -2901,7 +2901,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
@@ -2916,7 +2916,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
+							} 
 							memory[ptr_pos]++; 
 							ptr_pos++; 
 							ptr_pos++; 
@@ -2927,7 +2927,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -2946,8 +2946,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
 						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -2967,7 +2967,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -3000,18 +3000,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
@@ -3034,7 +3034,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
@@ -3045,7 +3045,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -3059,7 +3059,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]--; 
 					ptr_pos++; 
@@ -3092,19 +3092,19 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
 							ptr_pos++; 
 							memory[ptr_pos]++; 
 							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -3117,7 +3117,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos--; 
@@ -3129,7 +3129,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -3219,13 +3219,13 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -3245,7 +3245,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -3334,14 +3334,14 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -3361,7 +3361,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -3397,7 +3397,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -3427,7 +3427,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -3438,7 +3438,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				while(memory[ptr_pos]){ 
 					ptr_pos++; 
@@ -3466,7 +3466,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -3492,16 +3492,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -3521,7 +3521,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -3540,11 +3540,11 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -3564,7 +3564,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -3585,7 +3585,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
@@ -3610,7 +3610,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -3629,20 +3629,20 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]--; 
 					ptr_pos++; 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
 					ptr_pos++; 
 					memory[ptr_pos]++; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -3661,7 +3661,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -3670,7 +3670,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -3693,7 +3693,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -3721,7 +3721,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							memory[ptr_pos]--; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -3740,7 +3740,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
@@ -3772,164 +3772,164 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos--; 
 									ptr_pos--; 
 									ptr_pos--; 
-									} 
+								} 
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
 								while(memory[ptr_pos]){ 
 									memory[ptr_pos]--; 
-									} 
-								memory[ptr_pos]++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									} 
-								ptr_pos++; 
-								memory[ptr_pos]++; 
-								ptr_pos--; 
 								} 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos--; 
-								ptr_pos--; 
 								memory[ptr_pos]++; 
 								ptr_pos++; 
 								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
 								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos++; 
 								ptr_pos++; 
 								memory[ptr_pos]++; 
 								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								while(memory[ptr_pos]){ 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									} 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									memory[ptr_pos]--; 
-									} 
-								memory[ptr_pos]++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									} 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									memory[ptr_pos]--; 
-									} 
-								memory[ptr_pos]++; 
-								ptr_pos--; 
-								} 
 							} 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								memory[ptr_pos]++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos++; 
+								ptr_pos++; 
+								memory[ptr_pos]++; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								while(memory[ptr_pos]){ 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+								} 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									memory[ptr_pos]--; 
+								} 
+								memory[ptr_pos]++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+								} 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									memory[ptr_pos]--; 
+								} 
+								memory[ptr_pos]++; 
+								ptr_pos--; 
+							} 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -3949,7 +3949,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -3965,7 +3965,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -3994,7 +3994,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]--; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
@@ -4004,16 +4004,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]++; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
 							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -4080,9 +4080,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 										ptr_pos--; 
 										ptr_pos--; 
 										ptr_pos--; 
-										} 
-									ptr_pos--; 
 									} 
+									ptr_pos--; 
+								} 
 								ptr_pos++; 
 								while(memory[ptr_pos]){ 
 									memory[ptr_pos]--; 
@@ -4116,92 +4116,92 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos++; 
 									ptr_pos++; 
 									ptr_pos++; 
-									} 
-								ptr_pos--; 
-								ptr_pos--; 
 								} 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								memory[ptr_pos]++; 
 								ptr_pos--; 
 								ptr_pos--; 
-								ptr_pos--; 
-								while(memory[ptr_pos]){ 
-									memory[ptr_pos]--; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									memory[ptr_pos]--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									memory[ptr_pos]++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									} 
-								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								memory[ptr_pos]++; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
 							} 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								memory[ptr_pos]++; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								while(memory[ptr_pos]){ 
+									memory[ptr_pos]--; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									memory[ptr_pos]--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									memory[ptr_pos]++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+								} 
+								ptr_pos--; 
+							} 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								memory[ptr_pos]++; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+							} 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -4214,7 +4214,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -4239,23 +4239,23 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								memory[ptr_pos]--; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
 								ptr_pos++; 
 								memory[ptr_pos]++; 
 								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
 							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -4321,9 +4321,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 										ptr_pos--; 
 										ptr_pos--; 
 										ptr_pos--; 
-										} 
-									ptr_pos++; 
 									} 
+									ptr_pos++; 
+								} 
 								ptr_pos--; 
 								while(memory[ptr_pos]){ 
 									memory[ptr_pos]--; 
@@ -4357,9 +4357,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos++; 
 									ptr_pos++; 
 									ptr_pos++; 
-									} 
-								ptr_pos--; 
 								} 
+								ptr_pos--; 
+							} 
 							ptr_pos++; 
 							ptr_pos++; 
 							while(memory[ptr_pos]){ 
@@ -4404,9 +4404,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos++; 
 									ptr_pos++; 
 									ptr_pos++; 
-									} 
-								ptr_pos++; 
 								} 
+								ptr_pos++; 
+							} 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
@@ -4419,19 +4419,19 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
 							} 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
@@ -4445,8 +4445,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
 					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -4462,7 +4462,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -4489,7 +4489,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -4555,9 +4555,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos--; 
 									ptr_pos--; 
 									ptr_pos--; 
-									} 
-								ptr_pos--; 
 								} 
+								ptr_pos--; 
+							} 
 							ptr_pos++; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
@@ -4591,10 +4591,10 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
 							} 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
 						ptr_pos++; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
@@ -4638,9 +4638,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
-							ptr_pos--; 
 							} 
+							ptr_pos--; 
+						} 
 						ptr_pos++; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
@@ -4651,34 +4651,34 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
 					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -4689,18 +4689,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -4720,7 +4720,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -4747,7 +4747,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -4764,16 +4764,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -4793,7 +4793,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -4829,44 +4829,44 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -4886,7 +4886,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -4897,7 +4897,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				while(memory[ptr_pos]){ 
 					ptr_pos++; 
@@ -4910,7 +4910,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -4930,7 +4930,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -4958,7 +4958,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -4986,7 +4986,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
@@ -4999,7 +4999,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
+							} 
 							memory[ptr_pos]++; 
 							ptr_pos++; 
 							ptr_pos++; 
@@ -5010,7 +5010,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -5029,8 +5029,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
 						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -5050,7 +5050,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -5083,18 +5083,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
@@ -5117,7 +5117,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
@@ -5128,7 +5128,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -5142,7 +5142,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]--; 
 					ptr_pos++; 
@@ -5175,18 +5175,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
 							ptr_pos++; 
 							memory[ptr_pos]++; 
 							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					while(memory[ptr_pos]){ 
@@ -5196,7 +5196,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						memory[ptr_pos]++; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos--; 
@@ -5208,7 +5208,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -5297,14 +5297,14 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -5324,7 +5324,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -5332,7 +5332,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -5363,7 +5363,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -5393,7 +5393,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -5404,7 +5404,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				while(memory[ptr_pos]){ 
 					ptr_pos++; 
@@ -5419,7 +5419,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					memory[ptr_pos]++; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -5442,7 +5442,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -5477,174 +5477,174 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
+							} 
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
 							} 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
 							memory[ptr_pos]++; 
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
 							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
 							ptr_pos++; 
 							memory[ptr_pos]++; 
 							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							} 
 						} 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+							} 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+							} 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+						} 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -5664,7 +5664,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -5677,7 +5677,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -5708,7 +5708,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -5721,16 +5721,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -5782,9 +5782,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									memory[ptr_pos]++; 
 									ptr_pos++; 
 									ptr_pos++; 
-									} 
-								ptr_pos--; 
 								} 
+								ptr_pos--; 
+							} 
 							ptr_pos++; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
@@ -5814,74 +5814,74 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
 							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								memory[ptr_pos]--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								memory[ptr_pos]++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
+							ptr_pos--; 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								memory[ptr_pos]--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								memory[ptr_pos]++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
 					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -5897,7 +5897,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -5926,7 +5926,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							memory[ptr_pos]--; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						while(memory[ptr_pos]){ 
@@ -5936,16 +5936,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							memory[ptr_pos]++; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -5996,9 +5996,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos--; 
 									memory[ptr_pos]++; 
 									ptr_pos++; 
-									} 
-								ptr_pos++; 
 								} 
+								ptr_pos++; 
+							} 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
@@ -6026,10 +6026,10 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
 							} 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
@@ -6065,29 +6065,29 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
-							ptr_pos++; 
 							} 
+							ptr_pos++; 
+						} 
 						ptr_pos--; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
 							ptr_pos--; 
 							memory[ptr_pos]++; 
 							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -6099,7 +6099,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -6115,20 +6115,20 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+					} 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -6148,17 +6148,17 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -6187,7 +6187,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -6210,16 +6210,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						memory[ptr_pos]++; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -6239,7 +6239,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -6260,7 +6260,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
@@ -6287,7 +6287,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -6306,14 +6306,14 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]--; 
 					ptr_pos++; 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				while(memory[ptr_pos]){ 
@@ -6323,7 +6323,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					memory[ptr_pos]++; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -6342,7 +6342,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -6359,7 +6359,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -6390,212 +6390,212 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								memory[ptr_pos]++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos++; 
-								ptr_pos++; 
-								memory[ptr_pos]++; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								while(memory[ptr_pos]){ 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									} 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									memory[ptr_pos]--; 
-									} 
-								memory[ptr_pos]++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									} 
-								ptr_pos++; 
-								memory[ptr_pos]++; 
-								ptr_pos--; 
-								} 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								memory[ptr_pos]++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								memory[ptr_pos]++; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								while(memory[ptr_pos]){ 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									ptr_pos--; 
-									} 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									memory[ptr_pos]--; 
-									} 
-								memory[ptr_pos]++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									ptr_pos++; 
-									} 
-								ptr_pos++; 
-								while(memory[ptr_pos]){ 
-									memory[ptr_pos]--; 
-									} 
-								memory[ptr_pos]++; 
-								ptr_pos--; 
-								} 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								memory[ptr_pos]++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos++; 
+								ptr_pos++; 
+								memory[ptr_pos]++; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								while(memory[ptr_pos]){ 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+								} 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									memory[ptr_pos]--; 
+								} 
+								memory[ptr_pos]++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+								} 
+								ptr_pos++; 
+								memory[ptr_pos]++; 
+								ptr_pos--; 
+							} 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								memory[ptr_pos]++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								memory[ptr_pos]++; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								while(memory[ptr_pos]){ 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+									ptr_pos--; 
+								} 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									memory[ptr_pos]--; 
+								} 
+								memory[ptr_pos]++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+									ptr_pos++; 
+								} 
+								ptr_pos++; 
+								while(memory[ptr_pos]){ 
+									memory[ptr_pos]--; 
+								} 
+								memory[ptr_pos]++; 
+								ptr_pos--; 
+							} 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -6615,7 +6615,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -6628,7 +6628,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -6653,23 +6653,23 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								memory[ptr_pos]--; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
 								ptr_pos++; 
 								memory[ptr_pos]++; 
 								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
 							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -6729,9 +6729,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 										ptr_pos--; 
 										ptr_pos--; 
 										ptr_pos--; 
-										} 
-									ptr_pos++; 
 									} 
+									ptr_pos++; 
+								} 
 								ptr_pos--; 
 								while(memory[ptr_pos]){ 
 									memory[ptr_pos]--; 
@@ -6763,9 +6763,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos++; 
 									ptr_pos++; 
 									ptr_pos++; 
-									} 
-								ptr_pos--; 
 								} 
+								ptr_pos--; 
+							} 
 							ptr_pos++; 
 							ptr_pos++; 
 							while(memory[ptr_pos]){ 
@@ -6806,9 +6806,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos++; 
 									ptr_pos++; 
 									ptr_pos++; 
-									} 
-								ptr_pos++; 
 								} 
+								ptr_pos++; 
+							} 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
@@ -6819,31 +6819,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
 							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
@@ -6851,42 +6827,66 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]++; 
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							ptr_pos--; 
-							} 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -6902,7 +6902,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -6931,7 +6931,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]--; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
@@ -6941,16 +6941,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]++; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
 							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -7011,9 +7011,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 										memory[ptr_pos]++; 
 										ptr_pos--; 
 										ptr_pos--; 
-										} 
-									ptr_pos--; 
 									} 
+									ptr_pos--; 
+								} 
 								ptr_pos++; 
 								while(memory[ptr_pos]){ 
 									memory[ptr_pos]--; 
@@ -7045,10 +7045,10 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos++; 
 									ptr_pos++; 
 									ptr_pos++; 
-									} 
-								ptr_pos--; 
-								ptr_pos--; 
 								} 
+								ptr_pos--; 
+								ptr_pos--; 
+							} 
 							ptr_pos++; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
@@ -7088,9 +7088,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									ptr_pos++; 
 									ptr_pos++; 
 									ptr_pos++; 
-									} 
-								ptr_pos--; 
 								} 
+								ptr_pos--; 
+							} 
 							ptr_pos++; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
@@ -7099,33 +7099,33 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]++; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
 							} 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
 						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
 					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -7141,7 +7141,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -7156,7 +7156,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
@@ -7176,7 +7176,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -7202,7 +7202,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -7222,7 +7222,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -7282,9 +7282,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 									memory[ptr_pos]++; 
 									ptr_pos--; 
 									ptr_pos--; 
-									} 
-								ptr_pos--; 
 								} 
+								ptr_pos--; 
+							} 
 							ptr_pos++; 
 							while(memory[ptr_pos]){ 
 								memory[ptr_pos]--; 
@@ -7316,10 +7316,10 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
-							ptr_pos--; 
-							ptr_pos--; 
 							} 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
 						ptr_pos++; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
@@ -7359,9 +7359,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
-							ptr_pos--; 
 							} 
+							ptr_pos--; 
+						} 
 						ptr_pos++; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
@@ -7370,21 +7370,21 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							memory[ptr_pos]++; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
 					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -7399,18 +7399,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -7430,17 +7430,17 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				while(memory[ptr_pos]){ 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -7463,7 +7463,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -7480,16 +7480,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						memory[ptr_pos]++; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -7509,7 +7509,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -7539,7 +7539,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -7559,16 +7559,16 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						memory[ptr_pos]++; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -7588,7 +7588,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -7624,44 +7624,44 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -7681,7 +7681,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -7692,7 +7692,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				while(memory[ptr_pos]){ 
 					ptr_pos++; 
@@ -7705,7 +7705,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -7725,7 +7725,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -7753,7 +7753,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -7781,7 +7781,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								memory[ptr_pos]++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							ptr_pos--; 
 							while(memory[ptr_pos]){ 
@@ -7796,7 +7796,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
+							} 
 							memory[ptr_pos]++; 
 							ptr_pos++; 
 							ptr_pos++; 
@@ -7807,7 +7807,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -7826,8 +7826,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
 						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -7847,7 +7847,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -7880,18 +7880,18 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
@@ -7914,7 +7914,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos++; 
@@ -7925,7 +7925,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -7939,7 +7939,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]--; 
 					ptr_pos++; 
@@ -7972,19 +7972,19 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
 							ptr_pos++; 
 							memory[ptr_pos]++; 
 							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -7997,7 +7997,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos--; 
@@ -8009,7 +8009,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -8030,7 +8030,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -8050,7 +8050,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -8081,7 +8081,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -8115,7 +8115,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos++; 
 								ptr_pos++; 
 								ptr_pos++; 
-								} 
+							} 
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
@@ -8131,7 +8131,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 								ptr_pos--; 
 								ptr_pos--; 
 								ptr_pos--; 
-								} 
+							} 
 							memory[ptr_pos]++; 
 							ptr_pos++; 
 							ptr_pos++; 
@@ -8142,7 +8142,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
@@ -8161,8 +8161,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
 						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -8182,7 +8182,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -8216,19 +8216,19 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos--; 
 							ptr_pos--; 
 							ptr_pos--; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
 						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
@@ -8252,7 +8252,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
@@ -8264,7 +8264,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -8278,7 +8278,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]--; 
 					ptr_pos++; 
@@ -8311,19 +8311,19 @@ auto Compute(std::vector<CellType>& memory) -> void {
 							ptr_pos++; 
 							ptr_pos++; 
 							ptr_pos++; 
-							} 
+						} 
 						ptr_pos--; 
 						while(memory[ptr_pos]){ 
 							memory[ptr_pos]--; 
 							ptr_pos++; 
 							memory[ptr_pos]++; 
 							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
 						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -8336,7 +8336,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos--; 
 					memory[ptr_pos]++; 
 					ptr_pos--; 
@@ -8348,7 +8348,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -8438,13 +8438,13 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -8464,7 +8464,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -8500,7 +8500,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
+					} 
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
@@ -8530,7 +8530,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos--; 
 						ptr_pos--; 
 						ptr_pos--; 
-						} 
+					} 
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
@@ -8541,7 +8541,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					memory[ptr_pos]--; 
-					} 
+				} 
 				memory[ptr_pos]++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -8578,7 +8578,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
@@ -8601,232 +8601,232 @@ auto Compute(std::vector<CellType>& memory) -> void {
 						ptr_pos++; 
 						ptr_pos++; 
 						ptr_pos++; 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							} 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							} 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
 					} 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+							} 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+						} 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+							} 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+							} 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+						} 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -8846,7 +8846,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					ptr_pos--; 
 					ptr_pos--; 
-					} 
+				} 
 				ptr_pos++; 
 				ptr_pos++; 
 				memory[ptr_pos]--; 
@@ -8863,7 +8863,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos++; 
 					ptr_pos++; 
 					ptr_pos++; 
-					} 
+				} 
 				ptr_pos--; 
 				ptr_pos--; 
 				ptr_pos--; 
@@ -8879,13 +8879,13 @@ auto Compute(std::vector<CellType>& memory) -> void {
 					ptr_pos--; 
 					while(memory[ptr_pos]){ 
 						memory[ptr_pos]--; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
 					} 
-				ptr_pos++; 
-				ptr_pos++; 
+					ptr_pos--; 
+					ptr_pos--; 
 				} 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
 			ptr_pos--; 
 			ptr_pos--; 
 			memory[ptr_pos]++; 
@@ -8904,7 +8904,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
+			} 
 			memory[ptr_pos]++; 
 			ptr_pos--; 
 			ptr_pos--; 
@@ -8926,7 +8926,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				std::wcout<<memory[ptr_pos]; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
+			} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
@@ -8948,1245 +8948,1245 @@ auto Compute(std::vector<CellType>& memory) -> void {
 				ptr_pos++; 
 				ptr_pos++; 
 				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]++; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				memory[ptr_pos]++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				memory[ptr_pos]++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				memory[ptr_pos]++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				memory[ptr_pos]++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						} 
-					ptr_pos--; 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							ptr_pos--; 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos--; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				memory[ptr_pos]--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			memory[ptr_pos]++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			memory[ptr_pos]++; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						} 
-					ptr_pos--; 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							ptr_pos--; 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos--; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				memory[ptr_pos]++; 
-				memory[ptr_pos]++; 
-				memory[ptr_pos]++; 
-				memory[ptr_pos]++; 
-				memory[ptr_pos]++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							} 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							while(memory[ptr_pos]){ 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								ptr_pos--; 
-								} 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								ptr_pos++; 
-								} 
-							ptr_pos++; 
-							while(memory[ptr_pos]){ 
-								memory[ptr_pos]--; 
-								} 
-							memory[ptr_pos]++; 
-							ptr_pos--; 
-							} 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				memory[ptr_pos]++; 
-				memory[ptr_pos]++; 
-				memory[ptr_pos]++; 
-				memory[ptr_pos]++; 
-				memory[ptr_pos]++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				memory[ptr_pos]--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
 			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]++; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				memory[ptr_pos]++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				memory[ptr_pos]++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				memory[ptr_pos]++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				memory[ptr_pos]++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+					} 
+					ptr_pos--; 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							ptr_pos--; 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos--; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				memory[ptr_pos]--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			memory[ptr_pos]++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			memory[ptr_pos]++; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+					} 
+					ptr_pos--; 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							ptr_pos--; 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos--; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				memory[ptr_pos]++; 
+				memory[ptr_pos]++; 
+				memory[ptr_pos]++; 
+				memory[ptr_pos]++; 
+				memory[ptr_pos]++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+							} 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+						} 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							while(memory[ptr_pos]){ 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+								ptr_pos--; 
+							} 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+							} 
+							memory[ptr_pos]++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+								ptr_pos++; 
+							} 
+							ptr_pos++; 
+							while(memory[ptr_pos]){ 
+								memory[ptr_pos]--; 
+							} 
+							memory[ptr_pos]++; 
+							ptr_pos--; 
+						} 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				memory[ptr_pos]++; 
+				memory[ptr_pos]++; 
+				memory[ptr_pos]++; 
+				memory[ptr_pos]++; 
+				memory[ptr_pos]++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				memory[ptr_pos]--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+		} 
 		ptr_pos--; 
 		ptr_pos--; 
 		ptr_pos--; 
@@ -10211,1263 +10211,1263 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			ptr_pos++; 
 			while(memory[ptr_pos]){ 
 				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
 			} 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		while(memory[ptr_pos]){ 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			} 
-		ptr_pos++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		memory[ptr_pos]++; 
-		while(memory[ptr_pos]){ 
-			memory[ptr_pos]--; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
 			ptr_pos++; 
 			ptr_pos++; 
 			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			} 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		memory[ptr_pos]++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		memory[ptr_pos]++; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		while(memory[ptr_pos]){ 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			} 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		while(memory[ptr_pos]){ 
-			memory[ptr_pos]--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			memory[ptr_pos]++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			} 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		while(memory[ptr_pos]){ 
-			memory[ptr_pos]--; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						} 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			} 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		while(memory[ptr_pos]){ 
-			memory[ptr_pos]--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			memory[ptr_pos]++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			} 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		while(memory[ptr_pos]){ 
-			memory[ptr_pos]--; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				memory[ptr_pos]++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			memory[ptr_pos]++; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos--; 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						ptr_pos--; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos--; 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			memory[ptr_pos]++; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			} 
-		memory[ptr_pos]++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
-		while(memory[ptr_pos]){ 
-			memory[ptr_pos]--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			memory[ptr_pos]--; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			} 
-		memory[ptr_pos]++; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		ptr_pos--; 
-		while(memory[ptr_pos]){ 
-			memory[ptr_pos]--; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]--; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					} 
-				ptr_pos--; 
-				memory[ptr_pos]--; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					memory[ptr_pos]++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						ptr_pos--; 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						} 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos--; 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]++; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						} 
-					} 
-				memory[ptr_pos]++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					} 
-				memory[ptr_pos]++; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						memory[ptr_pos]--; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						ptr_pos--; 
-						while(memory[ptr_pos]){ 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							ptr_pos--; 
-							} 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							ptr_pos++; 
-							} 
-						ptr_pos++; 
-						while(memory[ptr_pos]){ 
-							memory[ptr_pos]--; 
-							} 
-						memory[ptr_pos]++; 
-						ptr_pos--; 
-						} 
-					} 
-				memory[ptr_pos]++; 
-				ptr_pos++; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos--; 
-					while(memory[ptr_pos]){ 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						ptr_pos++; 
-						} 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				} 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			memory[ptr_pos]++; 
-			while(memory[ptr_pos]){ 
-				memory[ptr_pos]--; 
-				while(memory[ptr_pos]){ 
-					memory[ptr_pos]--; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					ptr_pos++; 
-					memory[ptr_pos]++; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					ptr_pos--; 
-					} 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				ptr_pos++; 
-				} 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]--; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			ptr_pos++; 
-			memory[ptr_pos]--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			ptr_pos--; 
-			while(memory[ptr_pos]){ 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				ptr_pos--; 
-				} 
-			} 
-		ptr_pos++; 
-		ptr_pos++; 
-		ptr_pos++; 
 		} 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		while(memory[ptr_pos]){ 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+		} 
+		ptr_pos++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		memory[ptr_pos]++; 
+		while(memory[ptr_pos]){ 
+			memory[ptr_pos]--; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+		} 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		memory[ptr_pos]++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		memory[ptr_pos]++; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		while(memory[ptr_pos]){ 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+		} 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		while(memory[ptr_pos]){ 
+			memory[ptr_pos]--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			memory[ptr_pos]++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+		} 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		while(memory[ptr_pos]){ 
+			memory[ptr_pos]--; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+					} 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+		} 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		while(memory[ptr_pos]){ 
+			memory[ptr_pos]--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			memory[ptr_pos]++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+		} 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		while(memory[ptr_pos]){ 
+			memory[ptr_pos]--; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				memory[ptr_pos]++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			memory[ptr_pos]++; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos--; 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						ptr_pos--; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos--; 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			memory[ptr_pos]++; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+		} 
+		memory[ptr_pos]++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+		while(memory[ptr_pos]){ 
+			memory[ptr_pos]--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			memory[ptr_pos]--; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+		} 
+		memory[ptr_pos]++; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		ptr_pos--; 
+		while(memory[ptr_pos]){ 
+			memory[ptr_pos]--; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]--; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+				} 
+				ptr_pos--; 
+				memory[ptr_pos]--; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					memory[ptr_pos]++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						ptr_pos--; 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+					} 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos--; 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]++; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+					} 
+				} 
+				memory[ptr_pos]++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+				} 
+				memory[ptr_pos]++; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						memory[ptr_pos]--; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						ptr_pos--; 
+						while(memory[ptr_pos]){ 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+							ptr_pos--; 
+						} 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+							ptr_pos++; 
+						} 
+						ptr_pos++; 
+						while(memory[ptr_pos]){ 
+							memory[ptr_pos]--; 
+						} 
+						memory[ptr_pos]++; 
+						ptr_pos--; 
+					} 
+				} 
+				memory[ptr_pos]++; 
+				ptr_pos++; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos--; 
+					while(memory[ptr_pos]){ 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+						ptr_pos++; 
+					} 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+			} 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			memory[ptr_pos]++; 
+			while(memory[ptr_pos]){ 
+				memory[ptr_pos]--; 
+				while(memory[ptr_pos]){ 
+					memory[ptr_pos]--; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					ptr_pos++; 
+					memory[ptr_pos]++; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+					ptr_pos--; 
+				} 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+				ptr_pos++; 
+			} 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]--; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			ptr_pos++; 
+			memory[ptr_pos]--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			ptr_pos--; 
+			while(memory[ptr_pos]){ 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+				ptr_pos--; 
+			} 
+		} 
+		ptr_pos++; 
+		ptr_pos++; 
+		ptr_pos++; 
+	} 
 }
