@@ -70,8 +70,8 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			lBuckets++
 			functionCompute += "while(memory[ptr_pos]){ \n"
 		case ']':
-			addTabs()
 			lBuckets--
+			addTabs()
 			functionCompute += "} \n"
 		}
 	}
