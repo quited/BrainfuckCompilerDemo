@@ -21,14 +21,7 @@ auto Compute(std::vector<CellType>& memory) -> void {
 	size_t ptr_pos = 0;
 	memory[ptr_pos] += (1); 
 	while(memory[ptr_pos]) { 
-		memory[ptr_pos] += (-1); 
-		ptr_pos += (-1); 
-		memory[ptr_pos] += (1); 
-	} 
-	memory[ptr_pos] += (-1); 
-	ptr_pos += (-7); 
-	while(memory[ptr_pos]) { 
-		std::wcout << memory[ptr_pos]; 
 		ptr_pos += (1); 
+		memory[ptr_pos] += (1); 
 	} 
 }
