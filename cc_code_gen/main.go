@@ -109,6 +109,9 @@ auto Compute(std::vector<CellType>& memory) -> void {
 			functionCompute += "} \n"
 		case '@':
 			stop = true
+		case '#':
+			for idx++; input[idx] != '#' && idx < len(input); idx++ {
+			}
 		}
 	}
 
@@ -122,12 +125,13 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		return
 	}
 
-	functionInit := `auto Init(std::vector<CellType>& memory) -> void{
+	functionInit := `
+auto Init(std::vector<CellType>& memory) -> void{
 `
 
 	if idx < len(input) {
 		functionInit += fmt.Sprintf("	std::string remain = \"%s\";\n", input[idx:]) +
-			`	for(size_t i = 0;i < remain.size();i++)
+			`	for(size_t i = 0; i < remain.size(); i++)
 		memory[i] = remain[i];
 `
 	}

@@ -1,1 +1,1 @@
-[.>]@Hello World
+[.>]#Print all non zero cells#@Hello World
