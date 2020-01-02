@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdint>
 #include <vector>
+#include <string>
 
 using CellType = wchar_t;
 
@@ -9,9 +10,12 @@ const size_t kMemorySize = 65535;
 
 auto Compute(std::vector<CellType>& memory) -> void ;
 
+auto Init(std::vector<CellType>& memory) -> void;
+
 auto main() -> int{
 	auto memory=std::vector<CellType>();
 	memory.resize(kMemorySize);
+	Init(memory);
 	Compute(memory);
 	return EXIT_SUCCESS;
 }
@@ -141,4 +145,6 @@ auto Compute(std::vector<CellType>& memory) -> void {
 		ptr_pos += (-2); 
 		memory[ptr_pos] += (-1); 
 	} 
+}
+auto Init(std::vector<CellType>& memory) -> void{
 }
